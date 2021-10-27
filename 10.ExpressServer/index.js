@@ -8,7 +8,14 @@ app.get('/', function (req, res) {
 })
 
 app.get("/contact", function (req, res) {
-  res.send("Hello World from contact page");
+  res.send("<h1>Hello World from contact page</h1>");
+})
+
+app.get("/feedback",function(req,res){
+  res.send({
+    name:"Avishek",
+    rollNo:4
+  });
 })
 
 app.listen(port, () => {
